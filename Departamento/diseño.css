@@ -1,0 +1,148 @@
+body {
+    background-color: rgb(233, 228, 228);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header {
+    background-color: rgba(179, 34, 34, 0.897);
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 2rem;
+}
+
+
+/*  ---- Barra de busqueda ---- */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(124, 26, 26);
+    border-radius: 1.5rem;
+    padding: 0.8rem 1rem;
+    width: 30vw;
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 28%;
+}
+
+.search-container input {
+    background-color: rgb(124, 26, 26);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1em;
+    flex: 1;
+}
+
+.search-icon {
+    color: white;
+    margin-right: 0.8rem;
+}
+
+nav {
+    background-color: rgba(243, 243, 243, 0.788);
+    padding: 10px;
+    height: 7vh;
+}
+
+main {
+    margin-top: 2rem;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+main p {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.gallery {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery p {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+main button {
+    background-color: rgb(124, 26, 26);
+    color: white;
+    border-radius: 1rem;
+    width: 10%;
+    margin-left: 42%;
+    margin-bottom: 1rem;
+    transition: 0.5s;
+}
+
+main button:hover {
+    box-shadow: 0 0.2rem 2rem rgba(128, 16, 16, 0.897);
+    transition: 0.5s;
+    font-size: 1.3rem;
+}
+
+footer {
+    background-color: rgb(233, 232, 232);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+
+@media (max-width: 530px) {
+    body {
+        width: 165%;
+    }
+
+    .search-container {
+        width: 50%;
+        margin: auto;
+    }
+
+    nav {
+        font-size: 1.5rem;
+    }
+
+    main button {
+        width: 30%;
+    }
+}
+
+    @media (max-width: 768px) {
+        .search-container {
+            width: 50%;
+            margin: auto;
+        } 
+    
+        nav {
+            font-size: 2rem;
+        }
+    
+        .gallery {
+            width: 80%;
+        }
+
+        main button {
+            width: 25%;
+        }
+    }
